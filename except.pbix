@@ -1,0 +1,8 @@
+-- Find the uncommon rows between two table:
+
+-- Using **Power Query** 
+First click Merge and select Left Anti(rows only in first) > this selct the uncommon data which is not present in table 2
+
+--using **Dax query**
+= Except(left table , right table)
+returns row of left side table which donot appear in right side table 
